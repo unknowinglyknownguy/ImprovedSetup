@@ -30,5 +30,4 @@ else
 end
 function printidentity()
 	print("Current identity is 8")
- 
 end
