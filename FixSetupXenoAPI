@@ -10,7 +10,7 @@ local file = readfile("configs/Config.txt")
 if file then
     local ua = file:match("([^\r\n]+)") 
     if ua then
-        local uas = ua .. "/cxapi" 
+        local uas = ua .. "/XenoAPI" 
         local oldr = request 
         getgenv().request = function(options)
             if options.Headers then
@@ -29,6 +29,6 @@ else
     error("Failed to open config")
 end
 function printidentity()
-	print("Current identity is 6")
+	print("Current identity is 8")
  
 end
